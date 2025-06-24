@@ -3,4 +3,4 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 project(lsm6dsv16b)
 
-target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE src/main.c src/twim.c src/lsm6dsv16b.c)
